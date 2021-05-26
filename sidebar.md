@@ -5,7 +5,7 @@
 
 
 - **other menu**
-  - [sub menu1](content/README)
+  - [docsify kroki demo](kroki-demo)
     - [themes](content/w/themes.md)
 
 

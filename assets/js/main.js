@@ -14,6 +14,7 @@ window.$docsify = {
     // -----------------------------------------------------------------
     alias: {
         '.*?/changelog': 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/CHANGELOG.md',
+        '.*?/kroki-demo':'https://zuisong.github.io/docsify-kroki/README.md'
     },
     auto2top   : true,
     maxLevel   : 3,
@@ -81,7 +82,7 @@ window.$docsify = {
 
     // OTHERS
     // -----------------------------------------------------------------
-    basePath: 'http://localhost:7012/',
+    //basePath: 'http://localhost:7012/',
     //noCompileLinks: ['/foo', '/bar/.*'],
     themeColor: '#3F51B5',
     //mergeNavbar: true,
