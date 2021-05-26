@@ -1,19 +1,19 @@
-# docsify 博客小站模板
+# docsify blog and site demo
+Purpose： use markdown file write blog and notes, include private content, and share to sns, manual or auto sync to Personal site or other Platform  (目的：使用markdown写博客和笔记，甚至是私有的内容，然后分享到社交媒体，同步至个人博客站点和自媒体平台).
+## demo content introduction (内容介绍)
 
-## 搭建过程
-### 生成 docsify 文件
-- 执行命令：`docsify init ./docs`
-### 修改主题
-使用的皮肤为： [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/). 使用下面的替换index.html header中的默认皮肤：
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+### this demo inclued what(这个demo包含了哪些内容)? 
+[see here TODO](introduction)
 
-    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-    ```
+### how to Implement GitOPS workflow with docsify、github、md
+how to Implement GitOPS workflow or Article as Code with docsify、github、md，see here  [GitOPS workflow TODO](GitOPSworkflow)
 
-### 生成配置文件
+### demo struct(这个demo的结构)
+[see here TODO](introduction)
 
-- 生成sidebar: `docsify generate docs [--sidebar _sidebar.md]`
+### how to use this demo site
+if your want create a blog or or site base this repo, how can I do? [see here TODO](introduction)
 
-### 安装插件
+### markdown example, include docsify extension's syntax
 
+markdown demo, include docsify extension's syntax, [Markdown example](markdown)

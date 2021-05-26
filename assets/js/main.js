@@ -6,7 +6,7 @@ window.$docsify = {
     name       : 'blog/note Demo',
     repo       : 'liminany/docsify-blog-template',
     coverpage  : 'coverpage.md',
-    homepage   : 'introduction.md',
+    homepage   : 'index.md',
     loadSidebar: 'sidebar.md',
     loadNavbar: 'navbar.md',
 

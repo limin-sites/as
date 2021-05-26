@@ -1,13 +1,7 @@
-# docsify-themeable
+# docsify blog demo
+> Purpose： use markdown file write blog and notes, include private content, and share to sns, manual or auto sync to Personal site or other Platform  (目的：使用markdown写博客和笔记，甚至是私有的内容，然后分享到社交媒体，同步至个人博客站点和自媒体平台).
 
-> A delightfully simple theme system for [docsify.js](https://docsify.js.org)
 
-- Based on CSS custom properties
-- No packages to install or files to build
-- Improved desktop and mobile experience
-- Multiple themes available
-- Legacy browser support (IE10+)
-
-[Get Started](introduction)
-[Demo Sandbox](https://codesandbox.io/s/xv36w4695o)
-[GitHub](https://github.com/jhildenbiddle/docsify-themeable)
+[introduction](Introduction)
+[GitOPS workflow](GitOPSworkflow)
+[Ghost Blog]()
