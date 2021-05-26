@@ -17,3 +17,15 @@ if your want create a blog or or site base this repo, how can I do? [see here TO
 ### markdown example, include docsify extension's syntax
 
 markdown demo, include docsify extension's syntax, [Markdown example](markdown)
+
+### todo
+- [X] 模板仓库
+- [x] docify 主要插件集成，已集成：待补充
+- [ ] 集成分享按钮
+- [ ] 集成同步助手
+- [ ] 整体样式调整，包括首页coverpage结构 设计
+- [ ] 个人repo站点和github pages 创建
+- [ ] docify 次要插件集成
+- [ ] ghost 博客配置
+- [ ] post2ghost插件及GitOps实现
+- [ ] 评论集成管理端
