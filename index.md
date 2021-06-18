@@ -28,8 +28,10 @@ markdown demo, include docsify extension's syntax, see [Markdown example](markdo
 - [x] 评论功能集成
 - [x] 在线聊天室集成
 - [x] 集成分享按钮
-  - [ ] 添加国内SNS 
-- [ ] 整体样式调整美化，包括首页coverpage结构 设计
+  - [x] 添加国内SNS
+  - [ ] 添加国内SNS ,没有找到分享组件，决定使用浏览器插件
+
+- [ ] 整体样式调整美化，包括首页coverpage结构 设计。暂缓延后，本想集成[vue-particles](https://vue-particles.netlify.app/),但发现没那么简单
   - [ ] 首页内容加box框起来
   - [ ] navbar 样式有兼容问题，手机端效果比较差 ，应该是themeable的兼容性问题
 - [ ] 集成同步助手
