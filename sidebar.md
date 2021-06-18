@@ -8,7 +8,7 @@
 - **markdown example**
   - [Markdown](content/markdown-example/markdown.md)
     - [docsify kroki demo](kroki-demo)
-      - [other tips](content/w/themes.md)
+      - [other tips](content/markdown-example/other-tips.md)
 
 
 - **other example**

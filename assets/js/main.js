@@ -9,6 +9,7 @@ window.$docsify = {
     homepage   : 'index.md',
     loadSidebar: 'sidebar.md',
     loadNavbar: 'navbar.md',
+    onlyCover: true,
 
     // NAVIGATION
     // -----------------------------------------------------------------

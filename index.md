@@ -1,29 +1,38 @@
-# docsify blog and site demo
-Purpose： use markdown file write blog and notes, include private content, and share to sns, manual or auto sync to Personal site or other Platform  (目的：使用markdown写博客和笔记，甚至是私有的内容，然后分享到社交媒体，同步至个人博客站点和自媒体平台).
-## demo content introduction (内容介绍)
+# Dosify blog
+> [!NOTE]
+> **Purpose：** use markdown file write blog and notes, include private content, and share to sns, manual or auto sync to Personal site or other Platform.
 
-### this demo inclued what(这个demo包含了哪些内容)? 
-[see here TODO](introduction)
+> **目的：** 使用markdown写博客和笔记，甚至是私有的内容，然后分享到社交媒体，同步至个人博客站点和自媒体平台.
 
-### how to Implement GitOPS workflow with docsify、github、md
+## Introduction
+this demo inclued what(这个demo包含了哪些内容)? [see here TODO](introduction)
+
+## GitOPS workflow 
 how to Implement GitOPS workflow or Article as Code with docsify、github、md，see here  [GitOPS workflow TODO](GitOPSworkflow)
 
-### demo struct(这个demo的结构)
+## Repo struct
 [see here TODO](introduction)
 
-### how to use this demo site
+## How to use？
 if your want create a blog or or site base this repo, how can I do? [see here TODO](introduction)
 
-### markdown example, include docsify extension's syntax
+- clone repo
+- run: `docsify serve docs -p <port>`,example: `docsify serve -p 8095`
 
-markdown demo, include docsify extension's syntax, [Markdown example](markdown)
+## Markdown example
+markdown demo, include docsify extension's syntax, see [Markdown example](markdown)
 
-### todo
+## todo
 - [X] 模板仓库
 - [x] docify 主要插件集成，已集成：待补充
-- [ ] 集成分享按钮
+- [x] 评论功能集成
+- [x] 在线聊天室集成
+- [x] 集成分享按钮
+  - [ ] 添加国内SNS 
+- [ ] 整体样式调整美化，包括首页coverpage结构 设计
+  - [ ] 首页内容加box框起来
+  - [ ] navbar 样式有兼容问题，手机端效果比较差 ，应该是themeable的兼容性问题
 - [ ] 集成同步助手
-- [ ] 整体样式调整，包括首页coverpage结构 设计
 - [ ] 个人repo站点和github pages 创建
 - [ ] docify 次要插件集成
 - [ ] ghost 博客配置
