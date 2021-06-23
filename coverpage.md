@@ -9,6 +9,6 @@
 > use markdown file write blog and notes, include private content, and share to sns, manual or auto sync to Personal site or other Platform 。
 
 
-[Introduction](Introduction)
+[Introduction](index.md)
 [GitOPS workflow](content/GitOPSworkflow.md)
 [Ghost Blog]()
