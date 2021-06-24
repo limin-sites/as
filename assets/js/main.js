@@ -3,12 +3,12 @@
 window.$docsify = {
     // GENERAL
     // -----------------------------------------------------------------
-    name       : 'blog/note Demo',
-    repo       : 'liminany/docsify-blog-template',
+    name       : 'SQN\'s技术|生活|娱乐',
+    repo       : 'https://github.com/limin-sites/p',
     coverpage  : 'coverpage.md',
-    homepage   : 'index.md',
+    homepage   : 'README.md',
     loadSidebar: 'sidebar.md',
-    loadNavbar: 'navbar.md',
+    //loadNavbar: 'navbar.md',
     onlyCover: true,
 
     // NAVIGATION

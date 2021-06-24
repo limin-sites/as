@@ -1,26 +1,32 @@
-- **main menu**
-- [Introduction](introduction)
-- [GitOPS workflow](GitOPSworkflow)
-- [Custom style](content/w/themes.md)
+- **技术和生活**
+- [首页](index)
+- [最近更新](c/w/2021-notes.md)
+- [笔记](c/w/2021-notes.md)
+- [原创内容](c/w/artilcles.md)
 
 
-
-- **markdown example**
-  - [Markdown](content/markdown-example/markdown.md)
-    - [docsify kroki demo](kroki-demo)
-      - [other tips](content/markdown-example/other-tips.md)
-
-
-- **other example**
-  - [extenal md file (alias)](changelog)
+- **游戏和娱乐**
+- [最近更新](c/g/2021.md)
+- [笔记](c/g/2021.md)
+- [原创内容](c/g/artilcles.md)
 
 
-- **Links**
-- [docsify](https://github.com/docsifyjs/docsify/)
-- [docsify demo and plugs](https://github.com/docsifyjs/awesome-docsify)
-- [![Github](/assets/img/github.svg) docsify-themeable theme](https://github.com/jhildenbiddle/docsify-themeable)
-- [![NPM](/assets/img/npm.svg)docsify-themeable NPM](https://www.npmjs.com/package/docsify-themeable)
-- [![Code](/assets/img/code.svg)themeable Code Demo](https://codesandbox.io/s/xv36w4695o)
+- **资源与链接**
+- [关于SQN的技术|生活|娱乐空间](README.md)
+- [关于 GitOPS Workflow](GitOPSworkflow)
+- [关于 docsify](docsify.md)
+
+
+- **常用链接**
+- [sqn的老版笔记站点](https://liminany.github.io/m/#!index.md)
+- [MS Azure DevOps Docs](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops)
+- [MS Azure DevOps RestAPI](https://docs.microsoft.com/en-us/rest/api/azure/devops/)
+- [MS Azure DevOps Plugin SDK](https://docs.microsoft.com/en-us/javascript/api/azure-devops-extension-sdk/)
+- [Portal.Azure](https://portal.azure.com/)
+- [Portal.Azure.cn](https://portal.azure.cn/)
+- [TapTap主页](https://www.taptap.com/user/9489666)
+- [B站主页](https://space.bilibili.com/494408488)
+- [斗鱼主页](https://v.douyu.com/author/aBADak3DO7Xm)
 
 <!-- - [![Twitter](/assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle) -->
 
