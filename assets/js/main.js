@@ -15,7 +15,9 @@ window.$docsify = {
     // -----------------------------------------------------------------
     alias: {
         '.*?/changelog': 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/CHANGELOG.md',
-        '.*?/kroki-demo':'https://zuisong.github.io/docsify-kroki/README.md'
+        '.*?/kroki-demo':'https://zuisong.github.io/docsify-kroki/README.md',
+        ".*?/21-5-remote": "https://github.com/limin-sites/p/raw/main/notes/21-5.md",
+        ".*?/21-6-remote": "https://github.com/limin-sites/p/raw/main/notes/21-6.md"
     },
     auto2top   : true,
     maxLevel   : 3,

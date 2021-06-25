@@ -11,6 +11,16 @@
 - [原创内容](c/g/artilcles.md)
 
 
+- **私人空间**
+- [最近更新-TODO](c/g/2021.md)
+- [笔记](c/p/2021.md)
+  - [21-5](docs/p/notes/21-5.md)
+  - [21-5-remote](21-5-remote)
+  - [21-6-remote](21-6-remote)
+  - [21-7-remote](21-7-remote)
+  - [gp](c/gp/README.md)
+
+
 - **资源与链接**
 - [关于SQN的技术|生活|娱乐空间](README.md)
 - [关于 GitOPS Workflow](GitOPSworkflow)
@@ -27,6 +37,7 @@
 - [TapTap主页](https://www.taptap.com/user/9489666)
 - [B站主页](https://space.bilibili.com/494408488)
 - [斗鱼主页](https://v.douyu.com/author/aBADak3DO7Xm)
+
 
 <!-- - [![Twitter](/assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle) -->
 
