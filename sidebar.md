@@ -12,7 +12,8 @@
 
 
 - **私人空间**
-- [最近更新-TODO](c/g/2021.md)
+- [Personal](https://github.com/limin-sites/p)
+- [g Personal](https://github.com/limin-sites/gp)
 - [笔记](c/p/2021.md)
   - [21-5](docs/p/notes/21-5.md)
   - [21-5-remote](21-5-remote)
