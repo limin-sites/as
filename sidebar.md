@@ -4,22 +4,24 @@
 - [笔记](c/w/2021-notes.md)
 - [原创内容](c/w/artilcles.md)
 
+<!-- 
 
 - **游戏和娱乐**
 - [最近更新](c/g/2021.md)
 - [笔记](c/g/2021.md)
-- [原创内容](c/g/artilcles.md)
+- [原创内容](c/g/artilcles.md) 
+-->
 
 
 - **私人空间**
-- [Personal](https://github.com/limin-sites/p)
-- [g Personal](https://github.com/limin-sites/gp)
-- [笔记](c/p/2021.md)
+- [pppp-notes](https://github.com/limin-sites/p/tree/main/notes)
+- [gpgp-home](https://github.com/limin-sites/gp)
+<!-- - [笔记](c/p/2021.md)
   - [21-5](docs/p/notes/21-5.md)
   - [21-5-remote](21-5-remote)
   - [21-6-remote](21-6-remote)
   - [21-7-remote](21-7-remote)
-  - [gp](c/gp/README.md)
+  - [gp](c/gp/README.md) -->
 
 
 - **资源与链接**
@@ -35,10 +37,7 @@
 - [MS Azure DevOps Plugin SDK](https://docs.microsoft.com/en-us/javascript/api/azure-devops-extension-sdk/)
 - [Portal.Azure](https://portal.azure.com/)
 - [Portal.Azure.cn](https://portal.azure.cn/)
-- [TapTap主页](https://www.taptap.com/user/9489666)
-- [B站主页](https://space.bilibili.com/494408488)
-- [斗鱼主页](https://v.douyu.com/author/aBADak3DO7Xm)
-
+- [sgqanmae](c/g/index.md)
 
 <!-- - [![Twitter](/assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle) -->
 

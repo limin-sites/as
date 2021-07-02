@@ -16,9 +16,5 @@ this demo inclued what(这个demo包含了哪些内容)? [see here TODO](READEME
 
 [21年-5月笔记-w](c/w/notes/21-5.md)
 
-## Rencet game resource Article and Notes
 
-[21年-7月笔记-g](c/g/notes/21-6.md)
-
-[21年-6月笔记-g](c/g/notes/21-6.md)
 
