@@ -3,19 +3,21 @@
 window.$docsify = {
     // GENERAL
     // -----------------------------------------------------------------
-    name       : 'blog/note Demo',
-    repo       : 'liminany/docsify-blog-template',
+    name       : 'SQN\'s技术|生活|娱乐',
+    repo       : 'https://github.com/limin-sites/p',
     coverpage  : 'coverpage.md',
-    homepage   : 'index.md',
+    homepage   : 'README.md',
     loadSidebar: 'sidebar.md',
-    loadNavbar: 'navbar.md',
+    //loadNavbar: 'navbar.md',
     onlyCover: true,
 
     // NAVIGATION
     // -----------------------------------------------------------------
     alias: {
         '.*?/changelog': 'https://raw.githubusercontent.com/jhildenbiddle/docsify-themeable/master/CHANGELOG.md',
-        '.*?/kroki-demo':'https://zuisong.github.io/docsify-kroki/README.md'
+        '.*?/kroki-demo':'https://zuisong.github.io/docsify-kroki/README.md',
+        ".*?/21-5-remote": "https://github.com/limin-sites/p/raw/main/notes/21-5.md",
+        ".*?/21-6-remote": "https://github.com/limin-sites/p/raw/main/notes/21-6.md"
     },
     auto2top   : true,
     maxLevel   : 3,

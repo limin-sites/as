@@ -1,0 +1,6 @@
+[submodule "c/w"]
+	path = c/w
+	url = https://github.com/limin-sites/w.git
+[submodule "c/g"]
+	path = c/g
+	url = https://github.com/limin-sites/g.git
