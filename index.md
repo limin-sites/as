@@ -5,9 +5,11 @@
 > **目的：** 使用markdown写博客和笔记，甚至是私有的内容，然后分享到社交媒体，同步至个人博客站点和自媒体平台.
 
 ## Introduction
+
 this demo inclued what(这个demo包含了哪些内容)? [see here TODO](READEME)
 
 ## Rencet life && tech Article and Notes
+
 [21年-7月笔记-w](c/w/notes/21-7.md)
 
 [21年-6月笔记-w](c/w/notes/21-6.md)
@@ -19,3 +21,4 @@ this demo inclued what(这个demo包含了哪些内容)? [see here TODO](READEME
 [21年-7月笔记-g](c/g/notes/21-6.md)
 
 [21年-6月笔记-g](c/g/notes/21-6.md)
+
