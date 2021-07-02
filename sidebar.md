@@ -37,7 +37,7 @@
 - [MS Azure DevOps Plugin SDK](https://docs.microsoft.com/en-us/javascript/api/azure-devops-extension-sdk/)
 - [Portal.Azure](https://portal.azure.com/)
 - [Portal.Azure.cn](https://portal.azure.cn/)
-- [sgqanmae](c/g/index.md)
+- [sgqanmae](c/g-index.md)
 
 <!-- - [![Twitter](/assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle) -->
 
