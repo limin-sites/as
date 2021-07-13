@@ -5,35 +5,35 @@
 > **目的：** 使用markdown写博客和笔记，甚至是私有的内容，然后分享到社交媒体，同步至个人博客站点和自媒体平台.
 
 ## Introduction
-this demo inclued what(这个demo包含了哪些内容)? [see here TODO](introduction)
+this demo inclued what(这个demo包含了哪些内容)? [see here TODO](readme)
 
 ## GitOPS workflow 
-how to Implement GitOPS workflow or Article as Code with docsify、github、md，see here  [GitOPS workflow TODO](GitOPSworkflow)
+how to Implement GitOPS workflow or Article as Code with docsify、github、md，see here  [GitOPS workflow TODO](content/GitOPSworkflow)
 
 ## Repo struct
-[see here TODO](introduction)
+[see here TODO](readme)
 
 ## How to use？
-if your want create a blog or or site base this repo, how can I do? [see here TODO](introduction)
+if your want create a blog or or site base this repo, how can I do? [see here TODO](readme)
 
 - clone repo
 - run: `docsify serve docs -p <port>`,example: `docsify serve -p 8095`
 
 ## Markdown example
-markdown demo, include docsify extension's syntax, see [Markdown example](markdown)
+
+markdown demo, include docsify extension's syntax, see [Markdown example](content/markdown)，or [Markdown example](docsify.md)
 
 ## Rencet life && tech Article and Notes
+
+[21年-9月笔记-w](c/w/notes/21-9.md)
+
+[21年-8月笔记-w](c/w/notes/21-8.md)
+
 [21年-7月笔记-w](c/w/notes/21-7.md)
 
 [21年-6月笔记-w](c/w/notes/21-6.md)
 
 [21年-5月笔记-w](c/w/notes/21-5.md)
-
-## Rencet game resource Article and Notes
-
-[21年-7月笔记-g](c/g/notes/21-6.md)
-
-[21年-6月笔记-g](c/g/notes/21-6.md)
 
 ## todo
 - [X] 模板仓库,[此从此仓库fork而来](https://github.com/liminany/docsify-blog-template)，通用功能在主仓库的dev分支实现(通常只修改main.js和index.html),子仓库创建新功能集成PR: 从主仓库dev分支库至子仓库main分支的PR。
@@ -57,11 +57,12 @@ markdown demo, include docsify extension's syntax, see [Markdown example](markdo
 - [x] 集成分享按钮（docsify-themeable主题中已集成）
   - [x] 添加国外SNS，已经实现 （docsify-themeable主题中已集成）
   - [ ] 添加国内SNS，没有找到分享组件，暂定用浏览器扩展来实现
-- [ ] 集成同步助手
-- [ ] 私有仓库的集成,[pppppppppppppppp](https://github.com/limin-sites/p)，[gpgpgpgpgpgp](https://github.com/limin-sites/gp)
+- [x] 集成同步助手：已经在文章头部添加同步链接。
+- [ ] 引入云图片: 所有内容引入网络图片
+- [ ] 私有仓库的集成：[pppppppppppppppp](https://github.com/limin-sites/p)，[gpgpgpgpgpgp](https://github.com/limin-sites/gp),目前没找到好办法，暂缓
 - [ ] 整体样式调整美化，包括首页coverpage结构 设计. 难度太大，暂缓
   - [ ] 首页内容加box框起来
-  - [ ] top navbar 样式有兼容问题，手机端效果比较差 ，应该是themeable的兼容性问题
+  - [ ] top navbar 样式有兼容问题，手机端效果比较差 ，应该是themeable的兼容性问题，暂缓
   - [x] 已经修复评论框宽度问题
 
 - [ ] ghost 博客配置

@@ -6,6 +6,7 @@
 - [themeable Code Demo](https://codesandbox.io/s/xv36w4695o)
 - [Custom style](content/w/themes.md)    
 - [md example](content/markdown-example/markdown.md)
+- [wechatsync md example](https://www.wechatsync.com/md/)
 - [kroki plug demo](kroki-demo)
 - [other tips](content/markdown-example/other-tips.md)
 - [extenal md file (alias)](changelog)

@@ -25,19 +25,19 @@
 
 
 - **资源与链接**
-- [关于SQN的技术|生活|娱乐空间](README.md)
-- [关于 GitOPS Workflow](GitOPSworkflow)
+- [关于本站](README.md)
+- [GitOPS Workflow](content/GitOPSworkflow)
 - [关于 docsify](docsify.md)
 
-
 - **常用链接**
-- [sqn的老版笔记站点](https://liminany.github.io/m/#!index.md)
 - [MS Azure DevOps Docs](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops)
 - [MS Azure DevOps RestAPI](https://docs.microsoft.com/en-us/rest/api/azure/devops/)
 - [MS Azure DevOps Plugin SDK](https://docs.microsoft.com/en-us/javascript/api/azure-devops-extension-sdk/)
 - [Portal.Azure](https://portal.azure.com/)
 - [Portal.Azure.cn](https://portal.azure.cn/)
-- [sgqanmae](c/g-index.md)
+- [old site](https://liminany.github.io/m/#!index.md)
+- [其他]()
+  - [其他](c/g-index.md)
 
 <!-- - [![Twitter](/assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle) -->
 

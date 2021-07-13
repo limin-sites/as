@@ -8,7 +8,7 @@
 
 this demo inclued what(这个demo包含了哪些内容)? [see here TODO](READEME)
 
-## Rencet life && tech Article and Notes
+## Rencet Notes
 
 [21年-7月笔记-w](c/w/notes/21-7.md)
 

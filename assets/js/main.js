@@ -1,3 +1,27 @@
+function syncAssistant(isHtml) {
+    console.log(window.syncAssistantVM);
+    var syncVM =  window.syncAssistantVM;
+    window.syncPost({
+        title: syncVM.title || '未获取到标题',
+        desc: syncVM.mdContent ||'未获取到摘要',
+        content: isHtml?window.syncAssistantVM.htmlContent:window.syncAssistantVM.mdContent || '未获取到内容',
+        thumb: syncVM.thumb || "",
+    });
+};
+
+function goToWeichatFormat(isHtml) {
+    const input = document.createElement('textarea');
+    var c = isHtml?window.syncAssistantVM.htmlContent:window.syncAssistantVM.mdContent;
+    document.body.appendChild(input);
+    input.value = c;
+    input.select();
+    if (document.execCommand('copy')) {
+        document.execCommand('copy');
+        console.log('复制成功',c);
+    }
+    document.body.removeChild(input);
+    return true;
+};
 
 // Docsify
 window.$docsify = {
@@ -79,9 +103,100 @@ window.$docsify = {
     // },
     // [remoteMarkdownUrl](https://raw.githubusercontent.com/docsifyjs/docsify/develop/README.md)
     //有兼容问题
-    // plugins: [
-    //     EditOnGithubPlugin.create('https://github.com/liminany/docsify-blog-template/tree/main/'),
-    // ],
+    plugins: [
+        EditOnGithubPlugin.create('https://github.com/limin-sites/as/tree/main/',"","Edit"),
+        
+        function(hook, vm) {
+            var syncAssistantVM = {};
+            window.syncAssistantVM = syncAssistantVM;
+            syncAssistantVM.baseUrl = "https://github.com/limin-sites/as/tree/main/";
+            syncAssistantVM.mdFileUrl = syncAssistantVM.baseUrl + vm.route.file;// file 为undefine //TODO
+           
+            console.log(vm);
+            var header = [  
+                '<p style="float: right;margin-left:10px">',
+                    '<a style="text-decoration: underline; cursor: pointer" target="_blank" href="https://mixmark-io.github.io/turndown/"',
+                    'onclick="goToWeichatFormat(true)">',
+                    "turndown",
+                    '</a>',
+                '</p>',             
+                '<p style="float: right;margin-left:10px">',
+                    '<a style="text-decoration: underline; cursor: pointer"',
+                    'onclick="syncAssistant(false)">',
+                    "同步MD至...",
+                    '</a>',
+                '</p>',
+                '<p style="float: right;margin-left:10px">',
+                    '<a style="text-decoration: underline; cursor: pointer"',
+                    'onclick="syncAssistant(true)">',
+                    "同步HTML至...",
+                    '</a>',
+                '</p>',
+                '<p style="float: right;margin-left:10px">',
+                    '<a style="text-decoration: underline; cursor: pointer" target="_blank" href="http://md.barretlee.com/"',
+                    'onclick="goToWeichatFormat(false)">',
+                    "格式化MD",
+                    '</a>',
+                '</p>',
+                '<p style="float: right;margin-left:10px">',
+                    '<a style="text-decoration: underline; cursor: pointer" target="_blank" href="http://md.barretlee.com/"',
+                    'onclick="goToWeichatFormat(true)">',
+                    "格式化HTML",
+                    '</a>',
+                '</p>'
+               
+            ].join('')
+
+            hook.beforeEach(function(content) {
+                syncAssistantVM.mdContent = content;
+                syncAssistantVM.title = syncAssistantVM.mdContent.match(/^.*$/m)[0];//第一行为标题
+                var imgs = syncAssistantVM.mdContent.match(/!\[.*?\]\((.*?)\)/);
+                syncAssistantVM.thumb = (imgs && imgs.length > 0) ? imgs[1] : "";//第一张图片有封面,不能有转义字符
+                console.log(syncAssistantVM);
+                return content;
+            });
+
+            hook.afterEach(function(html) {
+            syncAssistantVM.htmlContent = html;         
+              return (
+                header + html               
+              );
+            });
+        },
+        function(hook, vm) {
+            
+            var header = [   
+                // '<div>',            
+                //     '<textarea id="input" spellcheck="false"></textarea>',
+
+                //     '<button class="btn copy-button" style="display:none;" data-clipboard-action="cut" data-clipboard-target="#outputCtt">复制</button>',
+                //     '<button class="btn convert-button">预览</button>',
+                    
+                //     '<div id="output">',
+                //     '<div class="themes-config">',
+                //         '<div class="theme-wrapper">',
+                //         '<label>页面主题选择：</label><select class="page-theme"></select>',
+                //         '</div>',
+                //         '<div class="theme-wrapper">',
+                //         '<label>代码主题选择：</label><select class="code-theme"></select>',
+                //         '</div>',
+                //     '</div>',
+                //     '<div class="wrapper" id="outputCtt"></div>',
+                //     '</div>',
+                // '</div>'
+            ].join('')
+
+            hook.beforeEach(function(content) {               
+                return content;
+            });
+
+            hook.afterEach(function(html) {                   
+              return (
+                header + html               
+              );
+            });
+        }
+    ],
 
     // OTHERS
     // -----------------------------------------------------------------
@@ -139,5 +254,5 @@ window.$docsify = {
     // <button @click="count += 1">+</button>
     // </p>
 
-    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}'
+    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',    
 };
