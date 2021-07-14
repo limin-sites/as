@@ -42,11 +42,22 @@
         .markdown-section {
             margin: 0 auto;
             max-width: 80%;
-            padding: 30px 15px 40px;
+            padding: 30px 4px 40px;
             position: relative;
         }
         .cover h1 span {
             font-size: calc(var(--cover-heading-font-size-max) * 0.8px) !important;
+        }
+
+        @media (max-width: 768px)
+        {
+            .hide-mobile{ display: none; }
+            .markdown-section {
+                max-width: 90% !important;
+            }
+            .vpanel {
+                padding: 6px;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wechatsync/article-syncjs@latest/dist/styles.css" />
