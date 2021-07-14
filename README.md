@@ -67,6 +67,7 @@ markdown demo, include docsify extension's syntax, see [Markdown example](conten
   - [x] 已经修复评论框宽度问题
 
 - [ ] ghost 博客配置
+- [ ] 移动端github无缝编辑方式调研，目前采用 https://prose.io/
 - [ ] post2ghost插件及GitOps实现，实现自动发布md草稿到ghost
 - [ ] docify 次要插件集成
 - [ ] 评论集成管理端Valine-admin

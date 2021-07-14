@@ -23,6 +23,34 @@ function goToWeichatFormat(isHtml) {
     return true;
 };
 
+function EditIn(ele,isGithub) {
+   console.log(window.syncAssistantVM);
+   var syncVM =  window.syncAssistantVM;
+   
+    if (syncVM.mdFileUrl) {
+        if (isGithub) {
+            if (syncVM.mdFileUrl.startsWith("c/g/"))
+                ele.href = syncVM.baseUrlG + syncVM.mdFileUrl.replace("c/g/", "");
+            else if (syncVM.mdFileUrl.startsWith("c/w/"))
+                ele.href = syncVM.baseUrlW + syncVM.mdFileUrl.replace("c/w/", "");
+            else
+                ele.href = syncVM.baseUrl + syncVM.mdFileUrl;
+        }
+
+        else {
+            if (syncVM.mdFileUrl.startsWith("c/g/"))
+                ele.href = syncVM.baseUrlProse + syncVM.mdFileUrl.replace("c/g/", "g/edit/main/");
+            else if (syncVM.mdFileUrl.startsWith("c/w/"))
+                ele.href = syncVM.baseUrlProse + syncVM.mdFileUrl.replace("c/w/", "w/edit/main/");
+            else
+                ele.href = syncVM.baseUrlProse + "as/edit/main/" + syncVM.mdFileUrl;
+        }
+    }
+    
+   alert( ele.href);
+   return true;  
+};
+
 // Docsify
 window.$docsify = {
     // GENERAL
@@ -104,50 +132,71 @@ window.$docsify = {
     // [remoteMarkdownUrl](https://raw.githubusercontent.com/docsifyjs/docsify/develop/README.md)
     //有兼容问题
     plugins: [
-        EditOnGithubPlugin.create('https://github.com/limin-sites/as/tree/main/',"","Edit"),
+        //EditOnGithubPlugin.create('https://github.com/limin-sites/as/tree/main/',"","Open In Github"),
         
         function(hook, vm) {
             var syncAssistantVM = {};
             window.syncAssistantVM = syncAssistantVM;
-            syncAssistantVM.baseUrl = "https://github.com/limin-sites/as/tree/main/";
-            syncAssistantVM.mdFileUrl = syncAssistantVM.baseUrl + vm.route.file;// file 为undefine //TODO
+            syncAssistantVM.baseUrl = "https://github.com/limin-sites/as/tree/main/";    
+            syncAssistantVM.baseUrlW = "https://github.com/limin-sites/w/tree/main/";      
+            syncAssistantVM.baseUrlG = "https://github.com/limin-sites/g/tree/main/";  
+            syncAssistantVM.baseUrlProse = "https://prose.io/#limin-sites/"
            
             console.log(vm);
             var header = [  
-                '<p class="hide-mobile" style="float: right;margin-left:10px">',
-                    '<a style="text-decoration: underline; cursor: pointer" target="_blank" href="https://mixmark-io.github.io/turndown/"',
+               
+                '<p class="c-top-header" style="float: right;margin-left:10px">',
+                    '<a style="" target="_blank"',
+                    'onclick="EditIn(this,false)">',
+                    "Edit in Prose.io",
+                    '</a>',
+                '</p>',   
+                '<p class="c-top-header" style="float: right;margin-left:10px">',
+                    '<a style="" target="_blank" ',
+                    'onclick="EditIn(this,true)">',
+                    "Edit in Github",
+                    '</a>',
+                '</p>',   
+                '<p class="hide-mobile c-top-header" style="float: right;margin-left:10px">',
+                    '<a style="" target="_blank" href="https://mixmark-io.github.io/turndown/"',
                     'onclick="goToWeichatFormat(true)">',
                     "turndown",
                     '</a>',
                 '</p>',             
-                '<p  class="hide-mobile" style="float: right;margin-left:10px">',
-                    '<a style="text-decoration: underline; cursor: pointer"',
+                '<p  class="hide-mobile c-top-header" style="float: right;margin-left:10px">',
+                    '<a style=""',
                     'onclick="syncAssistant(false)">',
                     "同步MD至...",
                     '</a>',
                 '</p>',
-                '<p  class="hide-mobile" style="float: right;margin-left:10px">',
-                    '<a style="text-decoration: underline; cursor: pointer"',
+                '<p  class="hide-mobile c-top-header" style="float: right;margin-left:10px">',
+                    '<a style=""',
                     'onclick="syncAssistant(true)">',
                     "同步HTML至...",
                     '</a>',
                 '</p>',
-                '<p  class="hide-mobile" class="hide-mobile" style="float: right;margin-left:10px">',
-                    '<a style="text-decoration: underline; cursor: pointer" target="_blank" href="http://md.barretlee.com/"',
+                '<p  class="hide-mobile c-top-header" class="hide-mobile" style="float: right;margin-left:10px">',
+                    '<a style="" target="_blank" href="http://md.barretlee.com/"',
                     'onclick="goToWeichatFormat(false)">',
                     "格式化MD",
                     '</a>',
                 '</p>',
-                '<p  class="hide-mobile" style="float: right;margin-left:10px">',
-                    '<a style="text-decoration: underline; cursor: pointer" target="_blank" href="http://md.barretlee.com/"',
+                '<p  class="hide-mobile c-top-header" style="float: right;margin-left:10px">',
+                    '<a style="" target="_blank" href="http://md.barretlee.com/"',
                     'onclick="goToWeichatFormat(true)">',
                     "格式化HTML",
                     '</a>',
-                '</p>'
+                '</p>',
+                // '<p  class="c-top-header" style="float:left;">',
+                //     '<a style="" target="_blank" href="#">',                
+                //     "首页",
+                //     '</a>',
+                // '</p>'
                
             ].join('')
 
             hook.beforeEach(function(content) {
+                syncAssistantVM.mdFileUrl = vm.route.file;// file 为undefine //TODO
                 syncAssistantVM.mdContent = content;
                 syncAssistantVM.title = syncAssistantVM.mdContent.match(/^.*$/m)[0];//第一行为标题
                 var imgs = syncAssistantVM.mdContent.match(/!\[.*?\]\((.*?)\)/);
