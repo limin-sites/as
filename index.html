@@ -51,12 +51,21 @@
 
         @media (max-width: 768px)
         {
-            .hide-mobile{ display: none; }
+            body 
+            {
+                font-size: smaller;
+            }
+            .hide-mobile{ display: none; } 
             .markdown-section {
                 max-width: 90% !important;
             }
             .vpanel {
-                padding: 6px;
+                padding: 0px;
+                margin-left: -12px;
+                margin-right: -12px;
+            }
+            .markdown-section h1 {
+                font-size: 2.2em;
             }
         }
     </style>
