@@ -59,6 +59,7 @@ markdown demo, include docsify extension's syntax, see [Markdown example](conten
   - [ ] 添加国内SNS，没有找到分享组件，暂定用浏览器扩展来实现
 - [x] 集成同步助手：已经在文章头部添加同步链接。
 - [ ] 引入云图片: 所有内容引入网络图片
+- [ ] 标准示例样式整理
 - [ ] 私有仓库的集成：[pppppppppppppppp](https://github.com/limin-sites/p)，[gpgpgpgpgpgp](https://github.com/limin-sites/gp),目前没找到好办法，暂缓
 - [ ] 整体样式调整美化，包括首页coverpage结构 设计. 难度太大，暂缓
   - [ ] 首页内容加box框起来
