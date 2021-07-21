@@ -151,7 +151,7 @@ window.$docsify = {
                     "Edit in Prose.io",
                     '</a>',
                 '</p>',   
-                '<p class="c-top-header" style="float: right;margin-left:10px">',
+                '<p class="c-top-header" style="float: right;margin-left:10px;display:none">',
                     '<a style="" target="_blank" ',
                     'onclick="EditIn(this,true)">',
                     "Edit in Github",
