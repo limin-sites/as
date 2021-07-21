@@ -36,8 +36,8 @@
 - [Portal.Azure](https://portal.azure.com/)
 - [Portal.Azure.cn](https://portal.azure.cn/)
 - [old site](https://liminany.github.io/m/#!index.md)
-- [其他]()
-  - [其他](c/g-index.md)
+<!-- - [其他]()
+  - [其他](c/g-index.md) -->
 
 <!-- - [![Twitter](/assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle) -->
 
