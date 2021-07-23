@@ -36,6 +36,7 @@
 - [Portal.Azure](https://portal.azure.com/)
 - [Portal.Azure.cn](https://portal.azure.cn/)
 - [old site](https://liminany.github.io/m/#!index.md)
+- [百度统计](https://tongji.baidu.com/web/9926961/trend/latest?siteId=17009522)
 <!-- - [其他]()
   - [其他](c/g-index.md) -->
 
