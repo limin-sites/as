@@ -47,7 +47,7 @@ function EditIn(ele,isGithub) {
         }
     }
     
-   alert( ele.href);
+   //alert( ele.href);
    return true;  
 };
 

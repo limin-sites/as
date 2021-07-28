@@ -16,6 +16,7 @@
 - **私人空间**
 - [pppp-notes](https://github.com/limin-sites/p/tree/main/notes)
 - [gpgp-home](https://github.com/limin-sites/gp)
+- [21-5-remote](21-5-remote)
 <!-- - [笔记](c/p/2021.md)
   - [21-5](docs/p/notes/21-5.md)
   - [21-5-remote](21-5-remote)
