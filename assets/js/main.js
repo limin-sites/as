@@ -126,6 +126,9 @@ window.$docsify = {
         headings: 'h1, h2, h3, h4, h5, h6',
         title: 'Table of Contents',// https://github.com/mrpotatoes/docsify-toc
     },
+    remoteMarkdown: {
+        tag: '21-5-remote2',
+    },
     // remoteMarkdown: {
     //     tag: 'remoteMarkdownUrl',//TODO optional // https://github.com/JerryC8080/docsify-remote-markdown
     // },
