@@ -14,12 +14,12 @@ workspace:
       git-config: true
       ssh-key: true
     command:
-      git submodule update --init --recursive
-      npm install --global http-server forever
-      forever start $(which http-server) $(pwd) -a -p 3001 -c-1
-      #forever http-server ./ -a -p 3001 -c-1
-      #forever list 查看所有 forever 运行的进程
-      #forever stop uid 停止运行指定 uid 的进程 forever stop 0
+      - git submodule update --init --recursive
+      - npm install --global http-server forever
+      - forever start $(which http-server) $(pwd) -a -p 3001 -c-1
+    # - forever http-server ./ -a -p 3001 -c-1
+    # - forever list 查看所有 forever 运行的进程
+    # - forever stop uid 停止运行指定 uid 的进程 forever stop 0
       
   services:
     smartide-template-python-vscode:
