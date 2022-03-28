@@ -20,6 +20,7 @@ workspace:
       - http-server ./ -a -p 3001 -c-1
     # - forever list 查看所有 forever 运行的进程
     # - forever stop uid 停止运行指定 uid 的进程 forever stop 0
+    # se start --host 1 git@github.com:limin-sites/as.git
       
   services:
     smartide-template-python-vscode:
