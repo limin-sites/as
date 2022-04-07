@@ -25,7 +25,7 @@ workspace:
   services:
     smartide-template-python-vscode:
       image: registry.cn-hangzhou.aliyuncs.com/smartide/smartide-python-v2-vscode:2198
-      restart: always
+      restart: no
       environment:
         ROOT_PASSWORD: root123
         LOCAL_USER_PASSWORD: root123
